@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coffee Shop">
+    <title>Coffee Shop</title>
+    <link rel="preload" href="fonts/PTRootUI-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/PTRootUI-Medium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/PTRootUI-Bold.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <nav class="nav">
+          <a class="nav__logo" href="index.html">
+            <img src="img/logo.svg" alt="Логотип Coffee Shop" width="122" height="56">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Кофе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Чай</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Подарочные наборы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Сладости</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Акции</a>
+            </li>
+          </ul>
+          <ul class="userbox__list">
+            <li class="userbox__item">
+              <a class="userbox__link-profile link" href="#">Вход</a>
+            </li>
+            <li class="userbox__item">
+              <a class="userbox__link-favorite link" href="#">Избранное</a>
+            </li>
+            <li class="userbox__item">
+              <a class="userbox__link-cart link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__content">
+      <section class="intro">
+        <div class="intro__wrapper container">
+          <h1 class="visually-hidden">Интернет-магазин кофе и чая Coffee Shop</h1>
+          <h2 class="intro__title">Лучшие сорта кофе с&nbsp;доставкой по&nbsp;всей России</h2>
+          <p class="intro__description">Более 50&nbsp;сортов свежеобжаренного кофе для всех способов приготовления</p>
+          <a class="intro__link-arrow link" href="#">Выбрать кофе</a>
+        </div>
+      </section>
+      <section class="novelty">
+        <div class="novelty__wrapper container">
+          <h2 class="novelty__title">Новинки</h2>
+          <ul class="novelty__list">
+            <li class="novelty__item">
+              <a class="novelty__link link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/coffee-1.webp">
+                  <source type="image/jpeg" srcset="img/coffee-1.jpg">
+                  <img class="novelty__item-img" src="img/coffee-1.jpg" alt="Кофейные зерна сорта Супримо La Marca">
+                </picture>
+                <dl class="novelty__item-info--primary">
+                  <dt class="novelty__item-name">Супримо La Marca</dt>
+                  <dd class="novelty__item-price">390₽</dd>
+                </dl>
+                <dl class="novelty__item-info--secondary">
+                  <dt class="novelty__item-origin">Бразилия</dt>
+                  <dd class="novelty__item-weight">100 гр.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="novelty__item">
+              <a class="novelty__link link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/coffee-2.webp">
+                  <source type="image/jpeg" srcset="img/coffee-2.jpg">
+                  <img class="novelty__item-img" src="img/coffee-2.jpg" alt="Кофейные зерна сорта Марципан">
+                </picture>
+                <dl class="novelty__item-info--primary">
+                  <dt class="novelty__item-name">Марципан</dt>
+                  <dd class="novelty__item-price">350₽</dd>
+                </dl>
+                <dl class="novelty__item-info--secondary">
+                  <dt class="novelty__item-origin">Колумбия</dt>
+                  <dd class="novelty__item-weight">100 гр.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="novelty__item">
+              <a class="novelty__link link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/coffee-3.webp">
+                  <source type="image/jpeg" srcset="img/coffee-3.jpg">
+                  <img class="novelty__item-img" src="img/coffee-3.jpg" alt="Кофейные зерна сорта Тоффи">
+                </picture>
+                <dl class="novelty__item-info--primary">
+                  <dt class="novelty__item-name">Тоффи</dt>
+                  <dd class="novelty__item-price">290₽</dd>
+                </dl>
+                <dl class="novelty__item-info--secondary">
+                  <dt class="novelty__item-origin">Эфиопия</dt>
+                  <dd class="novelty__item-weight">100 гр.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="novelty__item">
+              <a class="novelty__link link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/coffee-4.webp">
+                  <source type="image/jpeg" srcset="img/coffee-4.jpg">
+                  <img class="novelty__item-img" src="img/coffee-4.jpg" alt="Кофейные зерна сорта Амаретто">
+                </picture>
+                <dl class="novelty__item-info--primary">
+                  <dt class="novelty__item-name">Амаретто</dt>
+                  <dd class="novelty__item-price">330₽</dd>
+                </dl>
+                <dl class="novelty__item-info--secondary">
+                  <dt class="novelty__item-origin">Куба</dt>
+                  <dd class="novelty__item-weight">100 гр.</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
