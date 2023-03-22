@@ -1,0 +1,223 @@
+@font-face {
+  font-weight: 400;
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/PTRootUI-Regular.woff2") format("woff2"),
+    url("/fonts/PTRootUI-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/PTRootUI-Medium.woff2") format("woff2"),
+    url("/fonts/PTRootUI-Medium.woff") format("woff");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+body {
+  min-width: 1440px;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.25;
+  font-family: "PT Root UI", "Arial", sans-serif;
+  color: hsl(40deg 15% 8%);
+  background-color: hsl(50deg 20% 98%);
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.4rem 1.7rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.link,
+.button {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+:is(.link, .button):is(:hover, :focus) {
+  opacity: 0.7;
+}
+
+:is(.link, .button):active {
+  opacity: 0.5;
+}
+
+.header :where(.link:not(.nav__logo)) {
+  display: block;
+  font-weight: 500;
+  color: black;
+}
+
+.header__wrapper,
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrapper {
+  padding: 30px 0;
+}
+
+.header__wrapper,
+.nav__list {
+  column-gap: 40px;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav > * {
+  display: flex;
+}
+
+.nav__list {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__wrapper {
+  display: grid;
+  justify-content: space-between;
+  align-items: end;
+  grid-template-columns: 500px min-content;
+  padding: 60px 0 79px;
+}
+
+.intro__title {
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 1.2;
+}
+
+.intro__description {
+  margin: 0 0 59px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.intro__button-link {
+  max-width: fit-content;
+  padding: 0.8rem 1.7rem;
+}
+
+.intro__achievement {
+  display: grid;
+  grid-template-columns: repeat(2, 230px);
+  margin: 0;
+  gap: 25px 15px;
+}
+
+.intro__achievement * {
+  margin: 0;
+}
+
+.intro__achievement :where(div) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.intro__achievement :where(dd) {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.57;
+}
+
+.intro__achievement :where(dt) {
+  font-size: 18px;
+  line-height: 1.28;
+}
+
+.banner {
+  min-height: 675px;
+  background-image: linear-gradient(to bottom, transparent 50%, white),
+    url("../img/grey-red-building.jpg");
+  background-image: linear-gradient(to bottom, transparent 50%, white),
+    -webkit-image-set(
+      url("../img/grey-red-building.webp") 1x
+    );
+  background-image: linear-gradient(to bottom, transparent 50%, white),
+    image-set(
+      url("../img/grey-red-building.webp") type("image/webp"),
+      url("../img/grey-red-building.jpg") type("image/jpeg")
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cookie-notice {
+  position: fixed;
+  bottom: 15px;
+  z-index: 10;
+  width: 920px;
+  padding: 0;
+  background-color: hsl(40deg 15% 8%);
+  border: unset;
+}
+
+.cookie-notice__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.9rem;
+  padding-left: 2.1rem;
+}
+
+.cookie-notice__wrapper * {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: hsl(40deg 23% 97%);
+}
+
+.cookie-notice__button-group {
+  display: flex;
+  column-gap: 15px;
+}
+
+.cookie-notice__button-group > * {
+  padding: 0.4rem 2.1rem;
+  line-height: 1.2;
+}
+
+.cookie-notice__button-group :where(.button[type="submit"]) {
+  color: hsl(40deg 15% 8%);
+  background-color: hsl(40deg 23% 97%);
+  border-color: hsl(40deg 23% 97%);
+}
+

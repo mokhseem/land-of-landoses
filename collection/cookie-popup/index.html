@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Самстрой">
+    <title>Самстрой</title>
+    <link rel="preload" href="/fonts/PTRootUI-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/PTRootUI-Medium.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <nav class="nav">
+          <a class="nav__logo link" href="index.html">
+            <img src="img/logo.svg" alt="Логотип девелопера">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link" href="#">О комплексе</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Квартиры</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Галерея</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Ипотека</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Документы</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__contact link" href="tel:+78005555555">8 800 555 55 55</a>
+      </div>
+    </header>
+    <main class="page__content">
+      <section class="intro">
+        <div class="intro__wrapper container">
+          <h1 class="visually-hidden">Строительство и продажа квартир в Самаре</h1>
+          <div class="intro__about">
+            <h2 class="intro__title">Жилой комплекс в&nbsp;центре Самары</h2>
+            <p class="intro__description">Уникальный квартал с&nbsp;современной архитектурой и&nbsp;продуманной инфрастуктурой</p>
+            <a class="intro__button-link button" href="#">Выбрать квартиру</a>
+          </div>
+          <dl class="intro__achievement">
+            <div>
+              <dt>Жилых домов</dt>
+              <dd>7</dd>
+            </div>
+            <div>
+              <dt>Детских площадок</dt>
+              <dd>6</dd>
+            </div>
+            <div>
+              <dt>Парков и скверов</dt>
+              <dd>5</dd>
+            </div>
+            <div>
+              <dt>Спортивные площадки</dt>
+              <dd>4</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="container"></div>
+      </section>
+    </main>
+    <dialog class="cookie-notice" id="cookieDialog" open>
+      <h2 class="visually-hidden">Согласие на использование файлов cookie</h2>
+      <form  class="cookie-notice__wrapper" method="dialog">
+        <p>Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.</p>
+        <div class="cookie-notice__button-group">
+          <button class="button" type="submit" value="confirm">Принять</button>
+          <button class="button" type="reset" onclick="this.closest('dialog').close('cancel')">Закрыть</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
