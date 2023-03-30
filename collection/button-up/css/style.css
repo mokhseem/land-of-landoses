@@ -29,12 +29,17 @@
   clip-path: inset(100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-height: 100vh;
 }
 
 .page {
+  position: relative;
   min-width: 1440px;
   margin: 0;
   line-height: 1.4;
@@ -166,4 +171,23 @@ body {
 
 .nav__list {
   column-gap: 25px;
+}
+
+.scroll-up {
+  position: absolute;
+  top: 0;
+  right: 165px;
+  height: calc(100% - 165px);
+}
+
+.scroll-up::before {
+  content: "";
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.scroll-up__link {
+  position: sticky;
+  top: calc(100vh - 70px);
 }
