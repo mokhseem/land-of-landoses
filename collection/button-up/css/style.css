@@ -1,3 +1,9 @@
+:root {
+  --color-darkblue: 223deg 84% 7%;
+  --color-text: hsl(var(--color-darkblue));
+  --color-background: hsl(221deg 86% 11%);
+}
+
 @font-face {
   font-weight: 400;
   font-family: "PT Root UI";
@@ -44,6 +50,7 @@ body {
   margin: 0;
   line-height: 1.4;
   font-family: "PT Root UI", "Arial", sans-serif;
+  color: var(--color-text);
 }
 
 .page > :where(.page__footer) {
@@ -94,7 +101,6 @@ body {
   margin: 51px 0 25px;
   font-size: 28px;
   line-height: 39px;
-  color: hsl(221deg 86% 7%);
 }
 
 .page__article :where(p) {
@@ -110,9 +116,9 @@ body {
   display: flex;
   padding-top: 20px;
   line-height: 1.25;
-  color: hsl(223deg 84% 7% / 0.6);
+  color: hsl(var(--color-darkblue) / 0.6);
   column-gap: 21px;
-  border-top: 1px solid hsl(223deg 84% 7% / 0.1);
+  border-top: 1px solid hsl(var(--color-darkblue) / 0.1);
 }
 
 .meta__views {
@@ -150,7 +156,7 @@ body {
   font-weight: 500;
   line-height: 18px;
   color: white;
-  background-color: hsl(222deg 85% 11%);
+  background-color: var(--color-background);
 }
 
 .page-footer__logo {
@@ -190,4 +196,20 @@ body {
 .scroll-up__link {
   position: sticky;
   top: calc(100vh - 70px);
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: var(--color-background);
 }
+
+.scroll-up__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13px;
+  height: 20px;
+  background: url("../img/arrow-up.svg") no-repeat;
+  transform: translate(-50%, -50%);
+}
+
